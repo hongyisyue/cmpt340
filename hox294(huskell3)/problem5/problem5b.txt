@@ -1,0 +1,4 @@
+compose3 = f(g(h(x))) = (𝝺u.𝝺v.𝝺w.(u(v (w)))f(g(h(x)))
+                      = (𝝺v.𝝺w.(f(v (w)))g(h(x))
+                      = (𝝺w.(f(g (w)))h(x)
+                      = f(g (h(x)))

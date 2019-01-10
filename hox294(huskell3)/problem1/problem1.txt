@@ -1,0 +1,11 @@
+a) swap (x, y) = (y, x)
+   swap :: (t, t1) -> (t1, t)
+
+b) pair x y = (x, y)
+   pair :: t -> t1 -> (t, t1)
+
+c) double x = x*2
+   double :: num -> num
+
+d) twice f x = f (f (x))
+   twice :: (t -> t) -> t -> t

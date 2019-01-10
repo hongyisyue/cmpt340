@@ -1,0 +1,18 @@
+Name: Hongyi Sue
+Student number: 11187674
+NSID: hox294
+
+Assignment 3 
+
+problem5 testing result
+
+
+*Main> take 1 perfect
+[6]
+*Main> take 2 perfect
+[6,28]
+*Main> take 3 perfect
+[6,28,496]
+*Main> take 4 perfect
+[6,28,496,8128]
+

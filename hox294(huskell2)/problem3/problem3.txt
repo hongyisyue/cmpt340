@@ -1,0 +1,18 @@
+Name: Hongyi Sue
+Student number: 11187674
+NSID: hox294
+
+Assignment 3 
+
+problem3 testing result
+
+
+*Main> luhn [1,7,8,4]
+True
+*Main> luhn [4,7,8,3]
+False
+*Main> luhn [0,5,0,5]
+True
+*Main> luhn [2,0,3,0]
+True
+

@@ -1,0 +1,43 @@
+TESTING for fastExp1 ==========
+*Main> fastExp1 0 0
+1
+*Main> fastExp1 0 1
+0
+*Main> fastExp1 1 0
+1
+*Main> fastExp1 5 0
+1
+*Main> fastExp1 2 5
+32
+*Main> fastExp1 5 1
+5
+
+
+TESTING for fastExp2 ==========
+*Main> fastExp2 0 0
+1
+*Main> fastExp2 0 1
+0
+*Main> fastExp2 1 0
+1
+*Main> fastExp2 5 0
+1
+*Main> fastExp2 2 5
+32
+*Main> fastExp2 5 1
+5
+
+
+TESTING for fastExp3 ==========
+*Main> fastExp3 0 0
+1
+*Main> fastExp3 0 1
+0
+*Main> fastExp3 1 0
+1
+*Main> fastExp3 5 0
+1
+*Main> fastExp3 2 5
+32
+*Main> fastExp3 5 1
+5

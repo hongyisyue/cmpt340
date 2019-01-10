@@ -1,0 +1,87 @@
+Name: Hongyi Xue
+student number: 11187674
+=========================================================================================
+a)Cannot be unified:
+?- pilots(A, london) = pilots(london, paris).
+false.
+
+Term 1 has arity 1, term 2 has arity 0.
+
+b)Can be unified:
+?- point(X, Y, Z) = point(X1, Y1, Z1).
+X = X1,
+Y = Y1,
+Z = Z1.
+
+Above is the most general unifier.
+
+c)Cannot be unified:
+?- letter(C) = word(letter).
+false.
+
+First term has arity 1, second term has arity 0.
+
+d)Cannot be unified:
+?- noun(alpha) = alpha.
+false.
+
+The first term is a fact, Prolog will only return 'true’ or 'false’ for it, but the second term is an Atom 'alpha', so they cannot be unified.
+
+e)Can be unified:
+?- 'student' = student.
+true.
+
+The first term is an atom. Prolog considers values in single quotes atoms too. So not only can these terms be unified, but they are also equal.
+
+f)Cannot be unified:
+?- f(X, X) = f(a, b).
+false.
+
+Term 1 has arity 2, term 2 has arity 0.
+
+g)Can be unified
+?- f(X, a(b, c)) = f(Z, a(Z, c)).
+X = Z, Z = b.
+
+Above is the most general unifier.
+
+h)Cannot be unified:
+?- f(c, a(b, c)) = f(Z, a(Z, c)).
+false.
+
+Term 1 has arity 0, term 2 has arity 1.
+
+i)Can be unified:
+?- f(X, a(b, c)) = f(d, a(Z, c)).
+X = d,
+Z = b.
+
+Above is the most general unifier.
+
+j)Can be unified:
+?- g(Z, f(A, 17, B), A+B, 17) = g(C, f(D, D, E), C, E).
+Z = C, C = 17+17,
+A = B, B = D, D = E, E = 17.
+
+Above is the most general unifier.
+
+=========================================================================================
+a)
+?- stepmother_of(camilla, harry).
+true.
+
+b)
+?- child_of(W, charles).
+W = william 
+W = harry.
+
+c)
+?- stepmother_of(camilla, C).
+C = william 
+C = harry 
+
+d)
+?- grandchild_of(william, P), grandchild_of(harry, P).
+P = elizabeth 
+P = philip .
+

@@ -1,0 +1,21 @@
+TESTING for luhnDouble =====
+*Main> luhnDouble 0
+0
+*Main> luhnDouble 3
+6
+*Main> luhnDouble 6
+3
+*Main> luhnDouble 9
+9
+
+
+
+TESTING for luhn =====
+*Main> luhn 1 7 8 4
+"True"
+*Main> luhn 4 7 8 3
+"False"
+*Main> luhn 0 0 0 0
+"True"
+*Main> luhn 1 1 1 1
+"False"

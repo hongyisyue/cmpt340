@@ -1,0 +1,22 @@
+TESTING for compose3 =====
+*Main> f 5
+25
+*Main> g 5
+5
+*Main> h 5
+5.5
+*Main> compose3 5
+27.5
+
+
+
+*Main> f 0
+0
+*Main> g 0
+0
+*Main> h 0
+0.5
+*Main> compose3 0
+2.5
+
+

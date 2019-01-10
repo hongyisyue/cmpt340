@@ -1,0 +1,49 @@
+TESTING for averageThree =====
+*Main> averageThree 0 0 0 
+0
+*Main> averageThree 1 2 3 
+2
+
+
+
+TESTING for averageThreeInOne =====
+*Main> averageThreeInOne (1,2,3)
+2
+*Main> averageThreeInOne (5,6,7)
+6
+
+
+
+TESTING for orderTriple =====
+*Main> orderTriple (9,8,7)
+(7,8,9)
+*Main> orderTriple (1,8,1)
+(1,1,8)
+*Main> orderTriple (8,1,8)
+(1,8,8)
+*Main> orderTriple (8,8,1)
+(1,8,8)
+*Main> orderTriple (1,8,8)
+(1,8,8)
+*Main> orderTriple (8,8,8)
+(8,8,8)
+*Main> orderTriple (1,1,8)
+(1,1,8)
+*Main> orderTriple (8,1,1)
+(1,1,8)
+
+
+
+TESTING for orderTriple =====
+*Main> howManyAboveAverage (1,1,1)
+0
+*Main> howManyAboveAverage (1,2,1)
+1
+*Main> howManyAboveAverage (1,1,2)
+1
+*Main> howManyAboveAverage (2,1,2)
+2
+*Main> howManyAboveAverage (2,2,1)
+2
+*Main> howManyAboveAverage (2,1,1)
+1

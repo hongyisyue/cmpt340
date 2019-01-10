@@ -1,0 +1,28 @@
+Name: HONGYI XUE
+Student #: 11187674
+NSID: hox294
+Class: CMPT 340
+=======================================================================
+definitions of boolean constants:
+
+true = \x.\y.(x)
+false = \x.\y.(y)
+not = \v.\w.\x.(v x w)
+or = \v.\w.(v v w)
+and = \v.\w.(v w v)
+
+and true (not true)
+
+=\v.\w.(v w v) true (not true)
+=\w.(true w true)(not true)
+=(true (not true) true)
+=(\x.\y.(x) (not true) true)
+=(\y.(not true) true)
+=(not true)
+=(\v.\w.\x.(v x w) true)
+=(\w.\x.(true x w))
+=(\w.\x.(\x.\y.(x) x w))
+=(\w.\x.(\y.(x) w))
+=(\w.\x.(x))
+=(\x.\y.(y))
+=false

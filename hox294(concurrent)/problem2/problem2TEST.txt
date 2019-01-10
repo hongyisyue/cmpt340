@@ -1,0 +1,20 @@
+NAME: HONGYI XUE
+NSID: hox294
+11187674
+
+test case that with break up occur: 
+Man-1 and Woman-4 are couples now
+Man-4 and Woman-3 are couples now
+Man-3 and Woman-2 are couples now
+Man-3 and Woman-2 break up
+Man-2 and Woman-2 are repaired couples now
+Man-4 and Woman-3 break up
+Man-3 and Woman-3 are repaired couples now
+Man-4 and Woman-1 are couples now
+
+
+test case that with no break up occur: 
+Man-1 and Woman-4 are couples now
+Man-4 and Woman-1 are couples now
+Man-3 and Woman-2 are couples now
+Man-2 and Woman-3 are couples now

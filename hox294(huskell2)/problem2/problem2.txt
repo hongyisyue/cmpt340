@@ -1,0 +1,17 @@
+Name: Hongyi Sue
+Student number: 11187674
+NSID: hox294
+
+Assignment 3 
+
+problem2 testing result
+
+Ok, modules loaded: Main.
+*Main> altMap (+10) (+100) [1,2,3,4,5]
+[11,102,13,104,15]
+*Main> altMap (+10) (+100) [1,2,3,4,5,6]
+[11,102,13,104,15,106]
+*Main> altMap (+10) (+100) [1,2,3,4,5,6,7]
+[11,102,13,104,15,106,17]
+*Main> altMap (+10) (+100) [1,2,3,4,5,6,7,8]
+[11,102,13,104,15,106,17,108]

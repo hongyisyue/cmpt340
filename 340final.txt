@@ -1,0 +1,43 @@
+Marks:  Question:
+
+25     data structure for map
+
+15=7+8 functions on list(no recursion) HOF function
+
+10     built-in function, use it to built other function(not recursion, bur HOF)
+
+12     concurrent, numbers of process for actor, asinquler?? channels (which channel are used?), use either actor or channel.
+
+18=9+9 logical programming, 1)math definitely of some function(eg. fibonacci), how to write in prolog 2)develop search tree in prolog(last class don’t skip 'dun')
+
+========================================================================================
+
+1 per each for multiply choice question
+
+15 concurrent programming
+
+4  difference certain feature of (actor, Linda, …), 
+
+1  sinquness?? communication
+
+4  channel, what case does it work for, when is it terminate, what s the process
+
+   variable (—- separate process), number of histories(different path)
+   
+   final value of the programming
+
+9 mark total:
+2  putting bracket 
+
+1  basic prolog sytax
+
+1  prolog variables qualification 
+
+1  unified
+
+1  most correct generator, given 2 terms and list of protantion answer
+
+1  renovation of prolog
+
+1 last 2 slides, meaning of prolog programming(n, np )
+

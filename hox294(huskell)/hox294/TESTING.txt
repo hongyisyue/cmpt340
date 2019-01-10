@@ -1,0 +1,195 @@
+Name: HONGYI XUE
+Student #: 11187674
+NSID: hox294
+Class: CMPT 340
+=======================================================================
+problem2 TESTING
+=======================================================================
+*Main> curry1 fst 9 3
+9
+*Main> curry1 fst 3 9
+3
+*Main> curry1 fst 0 0
+0
+*Main> uncurry1 div (9, 3)
+3
+*Main> uncurry1 div (9, 0)
+*** Exception: divide by zero
+*Main> uncurry1 div (9, 2)
+4
+*Main> uncurry1 mod (9, 2)
+1
+
+=======================================================================
+problem3 TESTING
+=======================================================================
+*Main> (MyFloat 2 3)==(MyFloat 2 3)
+True
+*Main> (MyFloat 2 3)==(MyFloat 20 3)
+True
+*Main> (MyFloat 2 3)==(MyFloat 200 3)
+True
+*Main> (MyFloat 2 0)==(MyFloat 3 0)
+False
+*Main> (MyFloat 2 0)==(MyFloat 2 1)
+False
+*Main> (MyFloat 2 3)==(MyFloat 3 2)
+False
+
+
+*Main> (MyFloat 2 3)>(MyFloat 2 3)
+False
+*Main> (MyFloat 2 3)>=(MyFloat 2 3)
+True
+*Main> (MyFloat 2 3)<(MyFloat 3 2)
+False
+*Main> (MyFloat 2 3)<=(MyFloat 2 3)
+True
+
+
+*Main> (MyFloat 9 1)-(MyFloat 3 1)
+(MyFloat 6 1)
+*Main> (MyFloat 13 2)-(MyFloat 3 1)
+(MyFloat 10 2)
+*Main> (MyFloat 13 2)-(MyFloat 3 2)
+(MyFloat -17 2)
+*Main> (MyFloat 2 2)-(MyFloat 3 1)
+(MyFloat 17 2)
+*Main> (MyFloat 2 3)-(MyFloat 3 1)
+(MyFloat 197 3)
+*Main> (MyFloat 2 1)-(MyFloat 3 3)
+(MyFloat -298 1)
+*Main> (MyFloat 200 3)-(MyFloat 300 3)
+(MyFloat -1 3)
+
+
+*Main> (MyFloat 2 1)+(MyFloat 3 1)
+(MyFloat 5 1)
+*Main> (MyFloat 2 1)+(MyFloat 9 1)
+(MyFloat 11 2)
+*Main> (MyFloat 2 1)+(MyFloat 12 2)
+(MyFloat 14 2)
+*Main> (MyFloat 3 3)+(MyFloat 4 3)
+(MyFloat 7 3)
+*Main> (MyFloat 3 3)+(MyFloat 4 1)
+(MyFloat 304 3)
+*Main> (MyFloat 2 3)+(MyFloat 4 3)                 
+(MyFloat 6000000000000001 18)                                  ——when ever it gets "6", it shows up like this, I think it is a bug due to the Haskell language
+
+
+*Main> (MyFloat 2 1)*(MyFloat 0 1)
+(MyFloat 0 1)
+*Main> (MyFloat 3 3)*(MyFloat 4 1)
+(MyFloat 12 4)
+*Main> (MyFloat 3 1)*(MyFloat 4 1)
+(MyFloat 12 2)
+*Main> (MyFloat 3 1)*(MyFloat 2 2)
+(MyFloat 6 2)
+*Main> (MyFloat 3 1)*(MyFloat 2 1)
+(MyFloat 6 1)
+*Main> (MyFloat 3 2)*(MyFloat 9 2)
+(MyFloat 27 4)
+
+
+*Main> (MyFloat 2 1)/(MyFloat 0 1)
+*** Exception: divide by zero
+*Main> (MyFloat 24 2)/(MyFloat 2 1)
+(MyFloat 12 2)
+*Main> (MyFloat 24 2)/(MyFloat 8 1)
+(MyFloat 3 1)
+*Main> (MyFloat 24 2)/(MyFloat 8 2)
+(MyFloat 3 0)
+*Main> (MyFloat 24 2)/(MyFloat 2 2)
+(MyFloat 12 1)
+*Main> (MyFloat 22 2)/(MyFloat 2 1)
+(MyFloat 11 2)
+*Main> (MyFloat 222 2)/(MyFloat 2 1)
+(MyFloat 111 2)
+*Main> (MyFloat 222 2)/(MyFloat 2 3)
+(MyFloat 111 0)
+*Main> (MyFloat 222 2)/(MyFloat 2 4)
+(MyFloat 111 -1)
+*Main> (MyFloat 2222 2)/(MyFloat 2 4)
+(MyFloat 1111 -1)
+
+
+*Main> negate (MyFloat (-1) 9)
+(MyFloat 1 9)
+*Main> negate (MyFloat 1 9)
+(MyFloat -1 9)
+
+
+*Main> whole (MyFloat 329 1)
+3
+*Main> whole (MyFloat 329 2)
+32
+*Main> whole (MyFloat 329 3)
+329
+*Main> whole (MyFloat 329 4)
+3290
+
+*Main> fraction (MyFloat 329 0)
+0.329
+*Main> fraction (MyFloat 329 1)
+0.29000000000000004
+*Main> fraction (MyFloat 329 2)
+0.8999999999999986
+*Main> fraction (MyFloat 329 3)
+0.0
+
+=======================================================================
+problem4 TESTING
+=======================================================================
+*Main> shuffle [1,2,3,5] []
+[1,2,3,5]
+*Main> shuffle [1,2,3,5] [4,8,7]
+[1,4,2,8,3,7,5]
+*Main> shuffle [1,2,3,5] [4,8,1111]
+[1,4,2,8,3,1111,5]
+*Main> shuffle [1,2,3,5] [4,8,1,1,1,1]
+[1,4,2,8,3,1,5,1,1,1]
+
+======================================================================
+problem5 TESTING
+======================================================================
+*Main> split [1,2,3,4,5] 3
+([1,2,3],[4,5])
+*Main> split [1,2,3,4,5] 4
+([1,2,3,4],[5])
+*Main> split [1,2,3,4,5] 5
+([1,2,3,4,5],[])
+*Main> split [] 5
+([],[])
+
+======================================================================
+problem6 TESTING
+======================================================================
+*Main> nshuffle 2 2
+"brbr"
+*Main> nshuffle 3 3
+"bbbrrr"
+*Main> nshuffle 3 4
+"brbrbr"
+*Main> nshuffle 3 8
+"brbrbr"
+*Main> nshuffle 3 9
+"brrbbr"
+*Main> nshuffle 3 10
+"bbrbrr"
+*Main> nshuffle 3 11
+"bbbrrr"
+
+======================================================================
+problem7 TESTING
+======================================================================
+*Main> consecutive ['a','a','a','b','c','b']
+3
+*Main> consecutive "abcds"
+1
+*Main> consecutive "aabbcc"
+2
+*Main> consecutive "aabbcceee"
+3
+*Main> consecutive ""
+0
+
